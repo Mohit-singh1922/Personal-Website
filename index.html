@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mohit Singh | Home</title>
+		<link rel=icon href=images/favicon.png>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="fas fa-user"><span>About</span></a>
+						<a href="#hobbies" class="fas fa-play"><span>Hobbies</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Mohit Singh</h1>
+									<p>Student | Developer</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>About Me</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>About</h2>
+								</header>
+								<p>
+									<h3>Mohit Singh</h3>
+
+									<b>Personal Information</b>
+									<li><b>Sign</b> - Leo🐯</li>
+									<li><b>Fav Color</b> - Lilac🎨</li>
+									<li><b>Age</b> - 14👦</li>
+									<li><b>Nationality</b> - India</li>
+
+
+									<h6>School Student .</h6>
+							I'm a passionate learner who's always willing to learn and work across technologies and domains. I'm currently into Web Development and working on my Data Structures and Algorithms. Apart from that I also love to guide and mentor newbies.
+									<h4>SKILLS</h4>
+							C++, Javascript, Python, HTML5, CSS3,
+							Nodejs, Express, Reactjs, MongoDB, MySQL,
+							Git, Github, VSCode, Mozilla DevTools, Linux
+								</p>
+
+								<h6>You can find me everywhere, <b>@mohitsingh_1922</b></h6>
+								<br />
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Hobbies -->
+							<article id="hobbies" class="panel">
+								<header>
+									<h2>Hobbies</h2>
+								</header>
+								<ul>
+									<li>Programing</li>
+									<li>Playing Football</li>
+									<li>Playing BasketBall</li>
+									<li>Singing</li>
+									<li>Creating Things</li>
+									
+								  </ul>
+								</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form method="post" autocomplete="off" name="form-sheets">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<button type="submit" value="Send Message">Submite</button>
+												<button type="reset" value="Clear Fields">Reset</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Mohit Singh.</li><li>Design: <a href="https://www.instagram.com/mohit_singh1922/">Mohit Singh</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				const scriptURL = 'https://script.google.com/macros/s/AKfycbwxnHpl6NZlltxbspr5s37I1weoJtNBe7pp07vLHWLamYbEpQWh7k7L8LKtbZRl5oMibw/exec'
+				const form = document.forms['form-sheets']
+			  
+				form.addEventListener('submit', e => {
+				  e.preventDefault()
+				  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+					.then(response => alert("Thanks for Contacting us..! Mohit Will Contact You Soon..."))
+					.catch(error => console.error('Error!', error.message))
+				})
+			  </script>
+
+	</body>
+</html>
