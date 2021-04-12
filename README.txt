@@ -9,6 +9,7 @@
 - #### BOOTSTRAP v4.3
 - #### JavaScript
 - #### FontAwesome (for icons)
+- #### ETC
 
 ## Contributing
 
