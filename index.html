@@ -87,7 +87,7 @@
 									<li>Playing BasketBall</li>
 									<li>Singing</li>
 									<li>Creating Things</li>
-									
+
 								  </ul>
 								</article>
 
@@ -100,16 +100,16 @@
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" placeholder="Name" required />
 											</div>
 											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="text" name="email" placeholder="Email" required />
 											</div>
 											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" name="subject" placeholder="Subject" required />
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
+												<textarea name="message" placeholder="Message" required rows="6"></textarea>
 											</div>
 											<div class="col-12">
 												<input type="submit" value="Send Message"/>
@@ -142,7 +142,7 @@
 			<script>
 				const scriptURL = 'https://script.google.com/macros/s/AKfycbwxnHpl6NZlltxbspr5s37I1weoJtNBe7pp07vLHWLamYbEpQWh7k7L8LKtbZRl5oMibw/exec'
 				const form = document.forms['form-sheets']
-			  
+
 				form.addEventListener('submit', e => {
 				  e.preventDefault()
 				  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
